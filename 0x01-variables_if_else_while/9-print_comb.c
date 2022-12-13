@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - prints all possible combinations of single-digit numbers.
  *
@@ -11,15 +10,15 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 0; n <= 9; n++)
 	{
-		putchar(n + '0');
-		if (n < 9)
-		{																		putchar(',');
-			putchar(32);
+		putchar(n % 10) + '0');
+		if (n == 9)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
-
 	putchar('\n');
 	return (0);
 }
