@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Write a C program that prints the size of various data types in c
  *
@@ -11,6 +12,7 @@ int main(void)
 	long int c;
 	long long int d;
 	float f;
+
 	printf("Size of a char: %lu byte(S)\n", (unsigned long)sizeof(a));
 	printf("Size of an int: %lu byte(S)\n", (unsigned long)sizeof(b));
 	printf("Size of a long int: %lu byte(S)\n", (unsigned long)sizeof(c));
